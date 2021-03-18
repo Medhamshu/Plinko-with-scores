@@ -131,7 +131,7 @@ function draw() {
 
 function mousePressed()
 {
-  if(gameState!=="end")
+  if(gameState!=="end" && particle == null)
   {
     turn++;
     particle = new Particle(mouseX, 10, 10, 10)
